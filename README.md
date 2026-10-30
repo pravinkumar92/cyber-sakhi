@@ -267,6 +267,7 @@ flowchart LR
 | **Frontend** | Next.js 14.2 (App Router), React 18, Tailwind CSS, Lucide React |
 | **Backend** | Next.js Edge & Node.js Serverless Route Handlers |
 | **Database** | Supabase (PostgreSQL 15) with Row Level Security (RLS) |
+| **Media Storage** | Cloudinary (encrypted evidence blobs, face-blurred thumbnails, companion images) |
 | **Security & Auth** | NextAuth.js, bcryptjs, Web Crypto API (PBKDF2 + AES-GCM), TOTP MFA |
 | **AI & NLP** | Google Gemini 3.5 Flash, TF-IDF + Logistic Regression, Curated RAG |
 | **Voice & 3D** | Three.js, @met4citizen/talkinghead, node-edge-tts (`en-IN`, `hi-IN`) |
