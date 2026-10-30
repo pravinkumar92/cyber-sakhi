@@ -1,4 +1,4 @@
-# 🛡️ Cyber Sakhi
+# Cyber Sakhi
 
 > **AI-powered digital safety companion and forensic intelligence platform for proactive threat detection, trauma-informed survivor assistance, cryptographically sealed evidence custody, and law enforcement case triage.**
 
@@ -11,7 +11,7 @@
 [![Cloudinary](https://img.shields.io/badge/Cloudinary-Media_Storage-3448C5?style=for-the-badge&logo=cloudinary)](https://cloudinary.com/)
 [![Vitest](https://img.shields.io/badge/Vitest-2.1.9-6E9F18?style=for-the-badge&logo=vitest)](https://vitest.dev/)
 
- *Empowering citizens against cyber harassment and enabling rapid forensic response.*
+*Empowering citizens against cyber harassment and enabling rapid forensic response.*
 
 ```mermaid
 flowchart LR
@@ -23,22 +23,22 @@ flowchart LR
 
 ---
 
-## 🚨 The Problem
+## The Problem
 
-• **Pervasive Cyber Harassment**: Millions of women and digital users face online stalking, blackmail, sextortion, and non-consensual image abuse daily.  
-• **Colloquial Language Barrier**: Threats are frequently written in Romanised Hindi (*Hinglish*) or regional code, slipping past standard English-only filters.  
-• **Fragile Digital Evidence**: Digital proof is routinely deleted or dismissed in legal proceedings due to broken chains of custody and non-compliance with statutory standards (**Section 65B Indian Evidence Act**).  
-• **Investigation Backlog**: Police officers and cyber cells lack automated forensic parsing, territorial triage, and structured incident dossiers.
+- **Pervasive Cyber Harassment**: Millions of women and digital users face online stalking, blackmail, sextortion, and non-consensual image abuse daily.
+- **Colloquial Language Barrier**: Threats are frequently written in Romanised Hindi (*Hinglish*) or regional code, slipping past standard English-only filters.
+- **Fragile Digital Evidence**: Digital proof is routinely deleted or dismissed in legal proceedings due to broken chains of custody and non-compliance with statutory standards (**Section 65B Indian Evidence Act**).
+- **Investigation Backlog**: Police officers and cyber cells lack automated forensic parsing, territorial triage, and structured incident dossiers.
 
 ---
 
-## 💡 The Solution
+## The Solution
 
-• **Multilingual Detection**: Real-time heuristic and machine learning threat analysis across English, Hinglish, and Hindi (Devanagari).  
-• **Trauma-Informed Companion**: Bilingual AI guide (Gemini 3.5 Flash) with RAG grounding, verified helplines, and an interactive 3D WebGL avatar.  
-• **Cryptographic Evidence Locker**: Client-side envelope encryption (**AES-256-GCM** + **PBKDF2**) with zero server-side plaintext access.  
-• **Blockchain Witness**: Immutable timestamped anchoring of evidence SHA-256 digests onto the **Ethereum Sepolia testnet**.  
-• **Government Console**: Role- and territory-scoped portal for investigators with TOTP MFA, 3D geospatial crime visualization, and automated dossier exports.
+- **Multilingual Detection**: Real-time heuristic and machine learning threat analysis across English, Hinglish, and Hindi (Devanagari).
+- **Trauma-Informed Companion**: Bilingual AI guide (Gemini 3.5 Flash) with RAG grounding, verified helplines, and an interactive 3D WebGL avatar.
+- **Cryptographic Evidence Locker**: Client-side envelope encryption (**AES-256-GCM** + **PBKDF2**) with zero server-side plaintext access.
+- **Blockchain Witness**: Immutable timestamped anchoring of evidence SHA-256 digests onto the **Ethereum Sepolia testnet**.
+- **Government Console**: Role- and territory-scoped portal for investigators with TOTP MFA, 3D geospatial crime visualization, and automated dossier exports.
 
 ```mermaid
 flowchart TD
@@ -54,44 +54,44 @@ flowchart TD
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-| 🛡️ Threat Detection | 📧 Email Forensics | 🔐 Evidence Locker |
+| Threat Detection | Email Forensics | Evidence Locker |
 |---|---|---|
 | Scans messages for blackmail, stalking, and scams with Indian legal mapping (IT Act & BNS). | Deep RFC-822 parser, SMTP hop trace, SPF/DKIM verification, and 60k-feature ML model. | Client-side envelope encryption (**AES-256-GCM**) with tamper-evident chain of custody. |
 
-| 🤖 Sakhi AI & 3D Avatar | 🏛️ Government Console | 🚨 Emergency SOS |
+| Sakhi AI & 3D Avatar | Government Console | Emergency SOS |
 |---|---|---|
 | Bilingual trauma-aware AI (Gemini 3.5) with WebGL talking avatar and neural Indian TTS. | Law enforcement portal with TOTP MFA, territorial RBAC/ABAC, and 3D India geospatial scene. | 1-tap emergency trigger, automatic location broadcast, and simulated WhatsApp/SMS dispatch. |
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
     User["User: Citizen or Officer"] --> UI[Next.js 14 Web Frontend]
     UI --> Middleware[Edge Auth and Scope Middleware]
     Middleware --> API[Next.js API Route Handlers]
-    
+
     API --> Engine[Indic Heuristic Threat Engine]
     API --> ML[TF-IDF ML Email Classifier]
     API --> Gemini[Google Gemini 3.5 AI and RAG]
     API --> Voice[Neural Voice Synthesis Edge-TTS]
-    
+
     API --> DB[(Supabase PostgreSQL Database)]
     API --> Blockchain[Ethereum Sepolia Anchor Contract]
     API --> CDN[Cloudinary Media Storage]
 ```
 
-• **Frontend**: Next.js 14 App Router, Tailwind CSS, Three.js 3D scene, and TalkingHead avatar runtime.  
-• **API & Middleware**: Edge session routing, fail-closed access guards, and REST route handlers.  
-• **Processing Engines**: TypeScript regex heuristic engine, pure-TS TF-IDF softmax classifier, and cosine RAG retriever.  
-• **Persistence & Web3**: Supabase PostgreSQL with Row Level Security and Ethereum Sepolia smart contracts.
+- **Frontend**: Next.js 14 App Router, Tailwind CSS, Three.js 3D scene, and TalkingHead avatar runtime.
+- **API & Middleware**: Edge session routing, fail-closed access guards, and REST route handlers.
+- **Processing Engines**: TypeScript regex heuristic engine, pure-TS TF-IDF softmax classifier, and cosine RAG retriever.
+- **Persistence & Web3**: Supabase PostgreSQL with Row Level Security and Ethereum Sepolia smart contracts.
 
 ---
 
-## 🔄 How Cyber Sakhi Works
+## How Cyber Sakhi Works
 
 ```mermaid
 flowchart LR
@@ -103,17 +103,17 @@ flowchart LR
     Step6 --> Step7[7. Law Enforcement Review]
 ```
 
-1. **Input Threat**: User enters suspect text, uploads screenshot images, or pastes raw email headers.  
-2. **Deep Analysis**: System triggers multilingual regex heuristics and ML classification.  
-3. **Legal Mapping**: Translates detected risk into Indian statutory sections (**IT Act 2000 & BNS**).  
-4. **AI Guidance**: Sakhi AI provides empathetic support, safe next steps, and official helpline directions.  
-5. **Client Encryption**: Evidence is encrypted locally using **AES-256-GCM** with a **PBKDF2**-derived key.  
-6. **Blockchain Anchor**: A canonical **SHA-256** digest is anchored to Ethereum Sepolia for tamper-proofing.  
+1. **Input Threat**: User enters suspect text, uploads screenshot images, or pastes raw email headers.
+2. **Deep Analysis**: System triggers multilingual regex heuristics and ML classification.
+3. **Legal Mapping**: Translates detected risk into Indian statutory sections (**IT Act 2000 & BNS**).
+4. **AI Guidance**: Sakhi AI provides empathetic support, safe next steps, and official helpline directions.
+5. **Client Encryption**: Evidence is encrypted locally using **AES-256-GCM** with a **PBKDF2**-derived key.
+6. **Blockchain Anchor**: A canonical **SHA-256** digest is anchored to Ethereum Sepolia for tamper-proofing.
 7. **Law Enforcement Review**: Authorized officers review structured dossiers inside the Government Console.
 
 ---
 
-## 📧 Email Threat Detection
+## Email Threat Detection
 
 ```mermaid
 flowchart LR
@@ -124,15 +124,15 @@ flowchart LR
     Model --> Verdict[Final Risk Verdict and IOCs]
 ```
 
-• **SMTP Hop Traversal**: Extracts received timestamps, MTA anomalies, and originating public IP.  
-• **Authentication Verification**: Validates cryptographic SPF, DKIM, DMARC, and ARC alignment.  
-• **Threat Intelligence**: Checks extracted IPs against DNSBL blacklists (Spamhaus, SORBS) and scans RDAP domain age.  
-• **ML Classification**: Multinomial Logistic Regression over 60,000 unigram/bigram TF-IDF features ([`lib/ml/inference.ts`](lib/ml/inference.ts)).  
-• **BEC & Urgency Heuristics**: Detects financial impersonation, executive spoofing, and wire transfer coercion.
+- **SMTP Hop Traversal**: Extracts received timestamps, MTA anomalies, and originating public IP.
+- **Authentication Verification**: Validates cryptographic SPF, DKIM, DMARC, and ARC alignment.
+- **Threat Intelligence**: Checks extracted IPs against DNSBL blacklists (Spamhaus, SORBS) and scans RDAP domain age.
+- **ML Classification**: Multinomial Logistic Regression over 60,000 unigram/bigram TF-IDF features ([`lib/ml/inference.ts`](lib/ml/inference.ts)).
+- **BEC & Urgency Heuristics**: Detects financial impersonation, executive spoofing, and wire transfer coercion.
 
 ---
 
-## 🔐 Evidence & Integrity
+## Evidence & Integrity
 
 ```mermaid
 flowchart LR
@@ -143,14 +143,14 @@ flowchart LR
     Proof --> Verify[Chain of Custody Verification]
 ```
 
-• **SHA-256 Integrity Hashing**: Creates an irreversible cryptographic fingerprint of the canonical evidence payload.  
-• **Envelope Encryption**: Content is encrypted in-browser using random 256-bit AES-GCM keys; plaintext never reaches the server ([`lib/lockCrypto.ts`](lib/lockCrypto.ts)).  
-• **Blockchain Anchoring**: Writes `keccak256(id)` + `sha256(digest)` to the `EvidenceAnchor.sol` contract on Ethereum Sepolia.  
-• **Court Verification**: Detects post-incident tampering to produce court-admissible dossiers under Section 65B of the Indian Evidence Act.
+- **SHA-256 Integrity Hashing**: Creates an irreversible cryptographic fingerprint of the canonical evidence payload.
+- **Envelope Encryption**: Content is encrypted in-browser using random 256-bit AES-GCM keys; plaintext never reaches the server ([`lib/lockCrypto.ts`](lib/lockCrypto.ts)).
+- **Blockchain Anchoring**: Writes `keccak256(id)` + `sha256(digest)` to the `EvidenceAnchor.sol` contract on Ethereum Sepolia.
+- **Court Verification**: Detects post-incident tampering to produce court-admissible dossiers under Section 65B of the Indian Evidence Act.
 
 ---
 
-## ☁️ Cloudinary Media Storage
+## Cloudinary Media Storage
 
 ```mermaid
 flowchart LR
@@ -170,7 +170,7 @@ Cloudinary powers three storage workflows in Cyber Sakhi:
 | **Companion chat images** | `cyber-sakhi/companion/<userId>/` | `image`, EXIF-stripped | Analysis only, not persisted |
 | **Case thumbnails** | `cyber-sakhi/cases/<caseId>/` | `image`, face-blurred | `authenticated`, signed |
 
-**Key privacy invariants:**
+Key privacy invariants:
 - All evidence files are AES-256-GCM encrypted **before** reaching Cloudinary — the cloud never sees plaintext.
 - Cloudinary's AI face-blur transformation (`effect: blur_faces`) is applied to all case thumbnails.
 - EXIF metadata is stripped from companion images via `flags: strip_profile`.
@@ -178,7 +178,7 @@ Cloudinary powers three storage workflows in Cyber Sakhi:
 - Signed download URLs expire after 5 minutes and are generated server-side at [`/api/cloudinary/sign`](app/api/cloudinary/sign/route.ts).
 - When evidence is deleted from the locker, [`deleteFromCloudinary()`](lib/cloudinary.ts) is called to remove the Cloudinary asset.
 
-**Setup:** Add three environment variables from your [Cloudinary Dashboard](https://cloudinary.com/console):
+Setup — add these to your `.env.local`:
 ```bash
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
@@ -188,7 +188,7 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
 
 ---
 
-## 🏛️ Government Console
+## Government Console
 
 A dedicated operational subsystem located at `/gov` for cyber crime investigators and district officers.
 
@@ -204,17 +204,17 @@ flowchart LR
 
 | Area | Purpose | Code Reference |
 |---|---|---|
-| 🔑 **Authentication** | Officer ID (`SS-DDD-NNNN`), bcrypt cost 12, sliding lockout, and Google Authenticator TOTP MFA. | [`lib/gov/govAuth.ts`](lib/gov/govAuth.ts) |
-| 🛡️ **Access Control** | Fail-closed RBAC (`SUPER_ADMIN`, `INVESTIGATOR`, etc.) and territorial ABAC (`ALL_INDIA`, `STATE`, `DISTRICT`). | [`lib/gov/govPermissions.ts`](lib/gov/govPermissions.ts) |
-| 📂 **Cases** | Case triage, priority escalation, investigator assignment, victim history, and officer case notes. | [`app/gov/cases`](app/gov/cases) |
-| 🔐 **Evidence Vault** | Repository-wide SHA-256 hash integrity verifier and immutable chain-of-custody tracking. | [`app/gov/evidence`](app/gov/evidence) |
-| 🗺️ **3D Geospatial Map** | Interactive Three.js WebGL extrusion of Indian states with incident density scaling. | [`components/gov/India3DScene.tsx`](components/gov/India3DScene.tsx) |
-| 📄 **Reports** | Formal complaint-ready Section 65B forensic case dossier export. | [`app/gov/reports`](app/gov/reports) |
-| 🧾 **Audit Trail** | Immutable security audit logging with secret scrubbing and CSV export for compliance. | [`app/gov/audit`](app/gov/audit) |
+| **Authentication** | Officer ID (`SS-DDD-NNNN`), bcrypt cost 12, sliding lockout, and Google Authenticator TOTP MFA. | [`lib/gov/govAuth.ts`](lib/gov/govAuth.ts) |
+| **Access Control** | Fail-closed RBAC (`SUPER_ADMIN`, `INVESTIGATOR`, etc.) and territorial ABAC (`ALL_INDIA`, `STATE`, `DISTRICT`). | [`lib/gov/govPermissions.ts`](lib/gov/govPermissions.ts) |
+| **Cases** | Case triage, priority escalation, investigator assignment, victim history, and officer case notes. | [`app/gov/cases`](app/gov/cases) |
+| **Evidence Vault** | Repository-wide SHA-256 hash integrity verifier and immutable chain-of-custody tracking. | [`app/gov/evidence`](app/gov/evidence) |
+| **3D Geospatial Map** | Interactive Three.js WebGL extrusion of Indian states with incident density scaling. | [`components/gov/India3DScene.tsx`](components/gov/India3DScene.tsx) |
+| **Reports** | Formal complaint-ready Section 65B forensic case dossier export. | [`app/gov/reports`](app/gov/reports) |
+| **Audit Trail** | Immutable security audit logging with secret scrubbing and CSV export for compliance. | [`app/gov/audit`](app/gov/audit) |
 
 ---
 
-## 🤖 Sakhi Assistant
+## Sakhi Assistant
 
 ```mermaid
 flowchart LR
@@ -225,14 +225,14 @@ flowchart LR
     Model --> Text[Trauma-Informed Actionable Reply]
 ```
 
-• **Empathetic AI Model**: Powered by Google Gemini (`gemini-3.5-flash`) via server-side REST API ([`lib/ai/gemini.ts`](lib/ai/gemini.ts)).  
-• **Grounded RAG**: Retrieves verified safety facts from a curated knowledge base using TF-IDF cosine similarity ([`lib/rag/retrieve.ts`](lib/rag/retrieve.ts)).  
-• **Multimodal Screenshot Forensics**: Safely inspects up to 3 attached images (max 15MB) for scam detection without server storage.  
-• **3D Voice Avatar Mode**: Features Three.js WebGL rendering, phoneme viseme lip-sync, and neural Indian English/Hindi TTS (`node-edge-tts`).
+- **Empathetic AI Model**: Powered by Google Gemini (`gemini-3.5-flash`) via server-side REST API ([`lib/ai/gemini.ts`](lib/ai/gemini.ts)).
+- **Grounded RAG**: Retrieves verified safety facts from a curated knowledge base using TF-IDF cosine similarity ([`lib/rag/retrieve.ts`](lib/rag/retrieve.ts)).
+- **Multimodal Screenshot Forensics**: Safely inspects up to 3 attached images (max 15MB) for scam detection without server storage.
+- **3D Voice Avatar Mode**: Features Three.js WebGL rendering, phoneme viseme lip-sync, and neural Indian English/Hindi TTS (`node-edge-tts`).
 
 ---
 
-## 📊 Risk Scoring
+## Risk Scoring
 
 ```mermaid
 flowchart LR
@@ -260,7 +260,7 @@ flowchart LR
 
 ---
 
-## 🧩 Technology Stack
+## Technology Stack
 
 | Layer | Technology |
 |---|---|
@@ -277,7 +277,7 @@ flowchart LR
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cyber-sakhi/
@@ -300,7 +300,7 @@ cyber-sakhi/
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 | Area | Method | Endpoint | Purpose |
 |---|---|---|---|
@@ -311,17 +311,17 @@ cyber-sakhi/
 | **Evidence** | `POST` | `/api/evidence/[id]/anchor` | Anchors an evidence digest to the Ethereum Sepolia testnet. |
 | **Forensics** | `POST` | `/api/email-forensics` | Parses RFC-822/EML files; extracts hops, auth, and ML verdicts. |
 | **Gov Auth** | `POST` | `/gov/api/login` | Authenticates officers via Officer ID, password, and TOTP MFA. |
-| **Gov Cases**| `GET`  | `/gov/api/cases` | Retrieves jurisdiction-scoped cases for investigation. |
-| **Gov Geo**  | `GET`  | `/gov/api/geo/map` | Aggregates geographic incident density for the 3D scene. |
-| **Gov Audit**| `GET`  | `/gov/api/audit` | Retrieves immutable compliance audit log entries. |
+| **Gov Cases** | `GET` | `/gov/api/cases` | Retrieves jurisdiction-scoped cases for investigation. |
+| **Gov Geo** | `GET` | `/gov/api/geo/map` | Aggregates geographic incident density for the 3D scene. |
+| **Gov Audit** | `GET` | `/gov/api/audit` | Retrieves immutable compliance audit log entries. |
 
 ---
 
-## ⚙️ Quick Start
+## Quick Start
 
 ### 1. Installation
 ```bash
-git clone https://github.com/sambhav-coder/cyber-sakhi.git
+git clone https://github.com/pravinkumar92/cyber-sakhi.git
 cd cyber-sakhi
 npm install
 ```
@@ -337,6 +337,11 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
 GEMINI_API_KEY=your-gemini-api-key
 GEMINI_MODEL=gemini-3.5-flash
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
 
 # Optional: Blockchain Anchoring (Sepolia Testnet)
 BLOCKCHAIN_ANCHOR_ENABLED=false
@@ -354,7 +359,7 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## 🧪 Testing
+## Testing
 
 | Command | Purpose |
 |---|---|
@@ -365,46 +370,47 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
-1. **Push Code**: Commit your changes to GitHub.  
-2. **Import into Vercel**: Connect the repository to your Vercel team dashboard.  
-3. **Set Environment Variables**: Configure `NEXTAUTH_SECRET`, `SUPABASE_*`, and `GEMINI_API_KEY`.  
+1. **Push Code**: Commit your changes to GitHub.
+2. **Import into Vercel**: Connect the repository to your Vercel team dashboard.
+3. **Set Environment Variables**: Configure `NEXTAUTH_SECRET`, `SUPABASE_*`, `GEMINI_API_KEY`, and `CLOUDINARY_*`.
 4. **Deploy**: Vercel automatically bundles edge middleware, serverless endpoints, and cron jobs.
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-### ✅ Implemented
-• Multilingual Indic threat engine (Hinglish, Hindi, English) with IT Act & BNS mapping.  
-• Pure-TypeScript TF-IDF + Logistic Regression email threat classifier.  
-• Full RFC-822 email forensics studio with SMTP hop tracing and domain intelligence.  
-• Trauma-aware AI companion with Gemini 3.5 Flash and RAG grounding.  
-• 3D WebGL avatar lip-sync with neural Edge-TTS synthesis.  
-• Client-side envelope encryption (**AES-256-GCM** + **PBKDF2**).  
-• Ethereum Sepolia blockchain evidence anchoring via `EvidenceAnchor.sol`.  
-• Government Console with TOTP MFA, territory-scoped cases, and 3D geospatial mapping.
+### Implemented
+- Multilingual Indic threat engine (Hinglish, Hindi, English) with IT Act & BNS mapping.
+- Pure-TypeScript TF-IDF + Logistic Regression email threat classifier.
+- Full RFC-822 email forensics studio with SMTP hop tracing and domain intelligence.
+- Trauma-aware AI companion with Gemini 3.5 Flash and RAG grounding.
+- 3D WebGL avatar lip-sync with neural Edge-TTS synthesis.
+- Client-side envelope encryption (**AES-256-GCM** + **PBKDF2**).
+- Ethereum Sepolia blockchain evidence anchoring via `EvidenceAnchor.sol`.
+- Government Console with TOTP MFA, territory-scoped cases, and 3D geospatial mapping.
+- Cloudinary media storage for encrypted evidence blobs, companion images, and case thumbnails.
 
-### 🚧 In Progress
-• Direct API integration with the National Cyber Crime Reporting Portal (`cybercrime.gov.in`).  
-• Offline local speech recognition engine.  
-• District-level polygon vector boundaries for sub-state mapping.
+### In Progress
+- Direct API integration with the National Cyber Crime Reporting Portal (`cybercrime.gov.in`).
+- Offline local speech recognition engine.
+- District-level polygon vector boundaries for sub-state mapping.
 
-### 🔮 Future
-• Hardware Security Module (HSM) key management integration for government tier deployments.  
-• Zero-Knowledge Proofs (zk-SNARKs) for anonymous campus threat sharing.
-
----
-
-## 👥 Team
-
-• **Cyber Sakhi Team** — Developed for the **Smart India Hackathon (SIH)**.  
-• Dedicated to empowering citizens, defending digital rights, and accelerating cyber forensics.
+### Future
+- Hardware Security Module (HSM) key management integration for government tier deployments.
+- Zero-Knowledge Proofs (zk-SNARKs) for anonymous campus threat sharing.
 
 ---
 
-## 📜 License
+## Team
 
-• **Application Source Code**: Open-source educational build for the Smart India Hackathon.  
-• **Third-Party Attributions** ([`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md)): `@met4citizen/talkinghead` (MIT), `three` (MIT), 3D Avatar Mesh (CC BY-NC 4.0), ML Research Corpora (CC BY 4.0).
+- **Cyber Sakhi Team** — Developed for the **Smart India Hackathon (SIH)**.
+- Dedicated to empowering citizens, defending digital rights, and accelerating cyber forensics.
+
+---
+
+## License
+
+- **Application Source Code**: Open-source educational build for the Smart India Hackathon.
+- **Third-Party Attributions** ([`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md)): `@met4citizen/talkinghead` (MIT), `three` (MIT), 3D Avatar Mesh (CC BY-NC 4.0), ML Research Corpora (CC BY 4.0).
