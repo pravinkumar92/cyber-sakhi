@@ -1,0 +1,60 @@
+DataMeet India state boundaries (simplified display derivative).
+Source: https://github.com/datameet/maps
+  (website/docs/data/geojson/states.geojson, "India - State Boundaries")
+License: CC BY 4.0 (per the datameet/maps repository README:
+  "Unless explicitly stated, all datasets in this repository is shared
+  under CC BY 4.0 license.")
+Attribution (repo-requested form): India boundaries by DataMeet India
+  community (CC BY 4.0).
+
+Local processing (documented, no geometry invented):
+- Kept the single ST_NM name property per feature; dropped nothing else.
+- Douglas-Peucker simplification (tolerance ~0.02 degrees) + rounding to 3
+  decimals shrank 15.7 MB to ~138 KB for browser use. No vertex was added
+  or moved beyond the tolerance; small-UT polygons were verified present
+  (36/36 features intact).
+- Served as a static runtime asset (public/geo/india-states.geojson), never
+  bundled into JavaScript.
+
+Known dataset limitations (from DataMeet's own notes, inherited here):
+- Names follow the dataset verbatim, including "Arunanchal Pradesh" and
+  "Dadara & Nagar Havelli" spellings; the display join table maps to these
+  exact strings.
+- Jammu & Kashmir is pre-bifurcation geometry (Ladakh has no separate
+  polygon); DNH and Daman & Diu remain separate features (pre-merger).
+- Boundaries are community-digitized and approximate — suitable for a
+  case-volume choropleth, not for legal or official use.
+
+Surrounding regional context (neighboring landmasses only; India remains
+the sole extruded data layer):
+- Source: world-atlas countries-110m (already a project dependency),
+  whose geometries derive from Natural Earth (public domain). Rendered
+  flat, dark, and non-interactive; a country appears iff its real bounding
+  box intersects the regional view — no hand-picked list, no redrawn
+  borders. Sea labels (Arabian Sea, Bay of Bengal, Indian Ocean) are
+  cartographic text at mid-region positions only; oceans carry no boundary
+  lines of any kind.
+- world-atlas 110m is coarse by design: adequate for subdued context, not
+  for precise borders. No legal or official accuracy is claimed for any
+  geometry in this scene.
+
+DataMeet India district boundaries, Census 2011 vintage (display derivative).
+Source files: https://github.com/datameet/maps/tree/master/Districts/Census_2011
+  (2011_Dist.shp 10220732 bytes + .shx/.dbf/.prj), same repository/license as above:
+  CC BY 4.0, attribution "India boundaries by DataMeet India community (CC BY 4.0)".
+Local processing (documented, no geometry invented):
+- Parsed with pyshp; per-feature properties kept verbatim: DISTRICT, ST_NM,
+  ST_CEN_CD, DT_CEN_CD, censuscode. Multi-part polygons preserved as MultiPolygon.
+- Coordinates rounded to 4 decimals + Douglas-Peucker simplification at 0.004
+  degrees (~440 m): 636,353 -> 113,828 vertices (17.9%), 12.69 MB -> 2.36 MB.
+  All 641/641 district features intact, zero empty geometries.
+- Served as a static runtime asset (public/geo/india-districts-census2011.geojson).
+Known dataset limitations (verified + inherited from DataMeet's own notes):
+- Census 2011 vintage: Telangana has no districts (predates the 2014 split; its
+  districts still list under Andhra Pradesh, e.g. Adilabad). J&K and several
+  northeastern states are pre-delimitation; some boundaries are shifted.
+- District ST_NM spellings match the state file exactly (verified join), except
+  Telangana which has no counterpart rows.
+- Approximate community-digitized boundaries for case-volume display only;
+  never for legal, official, or exact-location use. Case counts always come
+  from scoped Cyber-Sakhi aggregates, never from this file.
