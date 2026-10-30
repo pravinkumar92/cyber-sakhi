@@ -401,15 +401,6 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 - Hardware Security Module (HSM) key management integration for government tier deployments.
 - Zero-Knowledge Proofs (zk-SNARKs) for anonymous campus threat sharing.
 
----
-
-## Team
-
-- **Cyber Sakhi Team** — Developed for the **Smart India Hackathon (SIH)**.
-- Dedicated to empowering citizens, defending digital rights, and accelerating cyber forensics.
-
----
-
 ## License
 
 - **Application Source Code**: Open-source educational build for the Smart India Hackathon.
